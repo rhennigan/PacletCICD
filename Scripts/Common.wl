@@ -8,6 +8,10 @@ Wolfram`PacletCICD`$Debug = True;
 Off[ DocumentationBuild`Utils`Localized::nokey ];
 Off[ PacletInstall::samevers ];
 
+PacletInstall[ "https://www.wolframcloud.com/obj/rhennigan/Paclets/DefinitionNotebookClient-1.14.0.paclet" ];
+Needs[ "DefinitionNotebookClient`" -> None ];
+Print @ Definition @ DefinitionNotebookClient`UpdateDefinitionNotebook`PackagePrivate`pmHack;
+
 (* ::**********************************************************************:: *)
 (* ::Section::Closed:: *)
 (*Initialization*)

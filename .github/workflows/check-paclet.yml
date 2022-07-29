@@ -5,6 +5,8 @@ on:
     - cron: '30 12 * * *'
   pull_request:
     branches: ["main"]
+  push:
+    branches: ["temp/dnc-paclet-test"]
   workflow_dispatch:
 
 env:
